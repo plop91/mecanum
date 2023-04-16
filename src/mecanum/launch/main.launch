@@ -1,0 +1,40 @@
+import launch
+import launch_ros.actions
+from launch import LaunchDescription
+from launch_ros.actions import Node
+
+package_name = 'py_launch_example'
+
+def generate_launch_description():
+    return LaunchDescription([
+        Node(
+            package='mecanum',
+            namespace='robot1',
+            executable='main',
+            name='sim'
+        ),
+        Node(
+            package='mecanum',
+            namespace='robot1',
+            executable='fsm',
+            name='sim'
+        ),
+        Node(
+            package='mecanum',
+            namespace='robot1',
+            executable='mecanum',
+            name='sim'
+        ),
+        Node(
+            package='mecanum',
+            namespace='robot1',
+            executable='camera',
+            name='sim'
+        ),
+        Node(
+            package='mecanum',
+            namespace='robot1',
+            executable='lidar',
+            name='sim'
+        ),
+    ])
