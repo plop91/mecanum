@@ -33,19 +33,12 @@
 
 
 // Maths
+// TODO: check these values, potentially move to separate config file
 #define WHEEL_DIAMETER 80 // mm
 #define WHEEL_RADIUS WHEEL_DIAMETER / 2
 #define WHEEL_CIRCUMFERENCE 2 * PI * WHEEL_RADIUS
 #define ENCODER_STEPS_PER_REVOLUTION 4
 #define ENCODER_TO_MM 0.0005
-
-
-
-
-
-
-
-
 
 // Settings
 

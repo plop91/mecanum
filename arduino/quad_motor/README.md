@@ -13,7 +13,8 @@ The serial commands are:
 'e' - print encoder values for all motors
 's' - print motor speeds for all motors
 'd <p/i/d> <motor> <value>' - set the P I or D value for motor <motor> to <value>
-
+'a <motor>' - set the motor PID controller to automatic mode
+'m <motor>' - set the motor PID controller to manual mode
 
 Return values:
 OK - command executed
@@ -27,3 +28,4 @@ alternatively, the return value can be the value of the command
 
 * Multiple pid controllers, one for position and one for speed?
 * Save pid values to eeprom?
+* currently the encoders are non functional, i believe this is a power issue

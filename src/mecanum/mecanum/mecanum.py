@@ -8,14 +8,14 @@ Description: This file contains the mecanum class which is used to control the m
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import Twist, TwistStamped
-from mecanum_interfaces.msg import RawEncoder, RawEncoderStamped, WheelSpeeds, WheelSpeedsStamped
+from mecanum_interfaces.msg import RawEncoder, WheelSpeeds
 from nav_msgs.msg import Odometry
 
 
 class QuadMecanum(Node):
 
     def __init__(self):
-        super().__init__("mecanum")
+        super().__init__("mecanum_wheels")
 
         # Wheel geometry
         self.wheel_separation_width = rclpy.get_param("/wheel/separation/horizontal")
